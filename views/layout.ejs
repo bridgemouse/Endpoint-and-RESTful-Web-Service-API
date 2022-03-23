@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Bing Bong</title>
+	<style media="screen">
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			color: black;
+			text-align: center;
+			font-family: 'open sans';
+		}
+		#topnavigation {
+			width: 100%;
+			text-align: center;
+			background-color:  gray;
+			height: 60px;
+		}
+		#navigation {
+			width: 100%;
+			text-align: center;
+			color: gray;
+			height: 60px;
+		}
+
+		#footer {
+			width: 100%;
+			text-align: center;
+			height: 60px;
+			position: relative;
+			bottom: 0;
+		}
+
+		#container {
+			height: 100px;
+		}
+		
+	</style>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="col-6 center">
+			<h>
+            <a href="/"><span class="button">Home</span></a>
+            <a href="/users"><span class="button">Users</span></a>
+			</h>
+		</div>
+        <div class="col-6 left">
+            <h1>~ ~ EJS is Fun ~ ~</h1>
+        </div>
+    </div>
+    <%- body %>
+	<div id="footer"> © <%= new Date() %></div>
+	
+</body>
+</html>
